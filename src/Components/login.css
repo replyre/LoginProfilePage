@@ -1,0 +1,49 @@
+* {
+  background-color: antiquewhite;
+}
+
+.form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 5px 15px coral;
+}
+
+label {
+  border-bottom: 2px double;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(248, 191, 191, 0.655);
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+input {
+  border: 2px solid rgba(214, 212, 212, 0.988);
+  font-size: 20px;
+  width: 80%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 5px;
+  font-size: x-large;
+  width: 150px;
+  background-color: rgba(255, 168, 168, 0.936);
+  border: 2px solid rgba(255, 139, 139, 0.936);
+  border-radius: 10px;
+}
+
+button:active {
+  font-size: 20px;
+  box-shadow: inset 0px 0px 5px rgba(248, 97, 97, 0.936);
+}

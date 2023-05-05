@@ -1,0 +1,38 @@
+.profileBook {
+  margin: 50px auto;
+  /* background-color: aqua; */
+  border: 5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 60vh;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+hr {
+  height: 90%;
+  margin: 10px;
+  color: inherit;
+  border-width: 2px;
+}
+
+.profilePage {
+  padding: 20px;
+  height: 80%;
+
+  /* background-color: aquamarine; */
+}
+
+.profilePage > p {
+  background-color: wheat;
+  border-radius: 10px;
+  display: flex;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid;
+  font-weight: bold;
+  width: 200px;
+  font-size: 20px;
+}

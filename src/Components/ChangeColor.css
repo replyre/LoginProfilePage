@@ -1,0 +1,11 @@
+.colorBox {
+  /* background-color: aqua; */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.colorButton {
+  width: 60%;
+  font-size: 20px;
+  margin: 10px;
+}

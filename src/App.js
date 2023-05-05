@@ -1,20 +1,27 @@
 import React from "react";
-import {Header, Content} from "./library";
-import "./style.css"
-import data from"./data";
+import "./App.css";
+import Login from "./Components/Login";
+import Profile from "./Components/Profile";
+import ChangeColor from "./Components/ChangeColor";
 
-export default function App(){
-    const dataElement=data.map( e =>{
-        return(
-            <Content  item={e}/>
-        )
-    }
-    )
-    return(
-      <div>
-        <Header />
-       {dataElement}
-        </div>
-    )
-    
-}
+const App = () => {
+  const [loggedIn, SetLoggedIn] = React.useState(false);
+  return (
+    <div
+      className="container"
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "0px",
+      }}
+    >
+      <ChangeColor />
+      {loggedIn && <Profile />}
+      <Login loggedIn={loggedIn} SetLoggedIn={SetLoggedIn} />
+    </div>
+  );
+};
+
+export default App;
